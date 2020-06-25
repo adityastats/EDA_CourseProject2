@@ -12,7 +12,7 @@ You must address the following questions and tasks in your exploratory analysis.
 6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (\color{red}{\verb|fips == "06037"|}fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?
 
 ### Data set:
-The data set for the project can be downloaded from the link - https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip
+The data set for the project can be downloaded from [here](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip)
 
 The zip file contains two files:
 1. PM2.5 Emissions Data (\color{red}{\verb|summarySCC_PM25.rds|}summarySCC_PM25.rds): This file contains a data frame with all of the PM2.5 emissions data for 1999, 2002, 2005, and 2008. For each year, the table contains number of tons of PM2.5 emitted from a specific type of source for the entire year.
