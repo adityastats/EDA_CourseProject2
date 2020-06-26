@@ -1,0 +1,10 @@
+library(ggplot2)
+NEI <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
+baltimore <- subset(NEI,fips=="24510")
+baltEmissions <- with(baltimore,aggregate(Emissions~year+type,FUN=mean))
+png("plot3.png",height = 480,width = 480)
+plt <- ggplot(baltEmissions,aes(x=year,y=Emissions,color=type))
+plt+geom_point()+geom_line()+facet_grid(.~type)+theme(axis.text.x = element_text(angle = 90))+
+  labs(x="Year",y="PM2.5 Emission")+ggtitle("Change in Emmisions for Baltimore city by type")
+dev.off()
